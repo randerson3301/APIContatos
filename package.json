@@ -1,0 +1,17 @@
+{
+  "name": "api_contatos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "start": "^5.1.0"
+  },
+  "devDependencies": {}
+}
