@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
+
 var mysql = require('mysql');
 
 //Conexão com o banco
@@ -22,6 +23,8 @@ const personRoute = require('./routes/personRoute');
 
 //config endpoints
 app.use('/', index);
-app.use('/persons', personRoute);
+app.use('/contacts', personRoute);
+
+
 
 module.exports = app;
