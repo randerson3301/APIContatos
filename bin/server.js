@@ -1,6 +1,6 @@
 const app = require('../src/app');
 
-const port = normalizaPort(process.env.PORT || '3000');
+const port = normalizaPort(process.env.PORT || '3100');
 
 function normalizaPort(val){
     const port = parseInt(val, 10); //o 10 é a base do val
