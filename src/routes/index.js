@@ -16,21 +16,10 @@ router.get('/', function(req, res, next){
             "/": "API index(this page)",
             "/contacts": "where you can se the contacts",
             "/contacts/id": "view the contact individually(selected by id)",
-            "/address/id": "you can see the contact address"
+            "/address/id": "you can see the contact address",
+            "/phones/id": "you can see the contact phone"
         }
     });
 });
-/*
-//view phone data of the contact
-router.get('/contacts/:con_id/phone', function(req, res){
-    const con_id = req.params.con_id;
-    
-    //getting phone data
-    global.connection.query(`SELECT * FROM tbl_telefone WHERE id_con = ${con_id}`,
-    function(error, result){
-        if(error) throw error;
-        res.send(JSON.stringify({"status":200, "error":null, "response":result}));
-    });
-});
-*/
+
 module.exports = router;
